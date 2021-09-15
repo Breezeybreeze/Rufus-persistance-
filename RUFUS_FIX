@@ -1,0 +1,32 @@
+Don’t even complicate it by logs n stufff
+
+Here is a simple solution which allows u to create a persistence partition as large as u want! 1 Tb 100 Tb ....n so on
+Only the limitation is ur physical disk space not a software bug
+
+Note-By viewing the scenario it is clear that there is definitely a problem with the formatting module of rufus.
+
+Now here is a solution
+
+Set the persistence partition to 1GB	Within a few minutes your file will be flashed on the usb .	Supposedly I want to create a 100 gb partition	I have a 128 gb usb	28 Gb a reserved for my iso boot sector, 1 gb as persistence and 99 gb unallocated memory	Now our goal is to merge the 99 gb to 1 gb persistence to make it 100 gb persistence which we could not have done otherwise on rufus as it would be stuck on 100% formatting
+7.So either arrange a vm or casually boot another iso in an Minimum of 4gb stick. Note- don’t boot in the stick you have to operate on.
+
+8.now install gparted (Linux partition manager for gnome btw) sometimes preinstalled just check and open it.
+
+9.now at the top right u select your 128 gb stick.
+
+Right click on the persistence 1gb sector and unmount it
+9.then right click again on the same 1 gb persistence sector to resize and give it a size of 100gb by moving the start and ending black arrows
+
+10.now click on the tick icon and apply the changes (located under the word help btw)
+
+11.it will take some time and then show u that u have a boot partition of 28 gb and persistent partition of 100 gb exactly what u wanted !!
+
+Took me 1 hour to add 50 gb.
+
+Note just to confirm if everything went right, just boot up the usb after resizing and make sure that there is no persistence folder by default on the desktop
+If there is a persistence folder then redo the process
+
+In the above example u did not mess with the initial 28 go of boot file so don’t worry it is safe!
+
+Thanks.
+
