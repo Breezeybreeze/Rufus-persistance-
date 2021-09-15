@@ -1,3 +1,7 @@
+
+
+https://www.youtube.com/watch?v=TQ-Z-Xzm4EE - KALI SETUP
+
 Don’t even complicate it by logs n stufff
 
 Here is a simple solution which allows u to create a persistence partition as large as u want! 1 Tb 100 Tb ....n so on
@@ -29,4 +33,6 @@ If there is a persistence folder then redo the process
 In the above example u did not mess with the initial 28 go of boot file so don’t worry it is safe!
 
 Thanks.
+
+
 
